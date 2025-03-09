@@ -12,6 +12,7 @@ public class Moditems {
             DeferredRegister.create(ForgeRegistries.ITEMS, FirstMod.MOD_ID);
 
     public static final RegistryObject<Item> NOCTIUM = ITEMS.register("noctium",()->new Item(new Item.Properties()));
+    public static final RegistryObject<Item> RAW_NOCTIUM = ITEMS.register("raw_noctium",()->new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
