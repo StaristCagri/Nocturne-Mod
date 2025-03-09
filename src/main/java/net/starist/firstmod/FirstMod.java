@@ -51,6 +51,7 @@ public class FirstMod
     {
         if(event.getTabKey()== CreativeModeTabs.INGREDIENTS){
             event.accept(Moditems.NOCTIUM);
+            event.accept(Moditems.RAW_NOCTIUM);
         }
     }
 
