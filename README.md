@@ -7,4 +7,8 @@ I'm currently developing a minecraft mod for improving myself and my Java skills
 -This mod is for Minecraft version 1.21 Java.  
 -It's using Forge modding.  
 -It's written just by myself.  
--[License](#license)  
+-[License](#license)
+
+##License
+
+This project is licensed under the MIT License.
