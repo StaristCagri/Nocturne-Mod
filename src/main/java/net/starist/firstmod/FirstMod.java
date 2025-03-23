@@ -14,6 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.starist.firstmod.block.ModBlocks;
 import net.starist.firstmod.item.Moditems;
 import org.slf4j.Logger;
 
@@ -33,6 +34,7 @@ public class FirstMod
         modEventBus.addListener(this::commonSetup);
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -52,6 +54,10 @@ public class FirstMod
         if(event.getTabKey()== CreativeModeTabs.INGREDIENTS){
             event.accept(Moditems.NOCTIUM);
             event.accept(Moditems.RAW_NOCTIUM);
+        }
+
+        if(event.getTabKey()==CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.NOCTIUM_BLOCK);
         }
     }
 
